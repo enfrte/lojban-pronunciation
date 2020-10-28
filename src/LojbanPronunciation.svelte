@@ -1,3 +1,5 @@
+<svelte:options tag="audio-button" />
+
 <script>
     import AudioButton from "./AudioButton.svelte";
 

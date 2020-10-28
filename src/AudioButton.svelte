@@ -1,3 +1,5 @@
+<svelte:options tag="lojban-pronunciation" />
+
 <script>
     export let sound;
     export let filename;
