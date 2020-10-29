@@ -10,8 +10,6 @@
 
 <div class="lojban-keyboard-container">
 
-    <a href="https://www.youtube.com/watch?v=xIYOyiAE-sY">To do: Build a component https://www.youtube.com/watch?v=xIYOyiAE-sY</a>
-
     <p>Voiced by Matt Arnold</p>
 
     <div class="sound-menu">
@@ -20,7 +18,7 @@
     </div>
 
     {#if alphabet}
-        <div class="lojban-keyboard-row" id="alphabet">
+        <div class="lojban-keyboard-row">
             <AudioButton filename="a" sound="a" />
             <AudioButton filename="b" sound="b" />
             <AudioButton filename="c" sound="c" />
@@ -48,7 +46,7 @@
             <AudioButton filename="lojban" sound="lojban" customClass="wider-key" />
         </div>
     {:else}
-        <div class="lojban-keyboard-row" id="dipthongs">
+        <div class="lojban-keyboard-row">
             <AudioButton filename="ai" sound="ai" />
             <AudioButton filename="au" sound="au" />
             <AudioButton filename="ei" sound="ei" />
@@ -71,6 +69,23 @@
 </div>
 
 <style>
+
+    .lojban-keyboard-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        color: #333;
+        margin: 0;
+        padding: 8px;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    button {
+        outline: none;
+        padding: 0.4em;
+    }
 
     .sound-menu {
         display: flex;
