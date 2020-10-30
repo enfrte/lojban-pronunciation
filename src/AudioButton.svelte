@@ -1,7 +1,7 @@
 <script>
     export let sound;
     export let filename;
-	export let customClass;
+	export let customClass = '';
 
 	function play(filename) {
 		const audioFile = 'audio/'+filename+'.mp3';
